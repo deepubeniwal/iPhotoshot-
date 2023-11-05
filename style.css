@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url(istockphoto-1248542684-612x612.jpg);
+    background-size: cover;
+
+}
+.main_box{
+    height: 100vh;
+
+}
+#check{
+    display: none;
+}
+.btn_one i{
+    /* border: 2px solid yellow; */
+    font-size: 25px;
+    position: absolute;
+    left: 10px;
+    top: 95px;
+    z-index: 1;
+    cursor: pointer;
+    transition-delay: 0.4s;
+    color: #dabdbd;
+    
+}
+.sidebar_menu{
+    width: 300px;
+    height: 80vh;
+    position: absolute;
+    left: -310px;
+    top: 80px;
+    box-shadow: 0 0 6px rgba(255, 0255, 255, 0.5);
+    transition: all 0.4s linear ;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}
+.sidebar_menu .logo a{
+    color: rgb(248, 248, 248);
+    position: absolute;
+    line-height: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 0 6px rgba(255, 0255, 255, 0.5);
+    width: 100%;    
+    text-decoration: none ;
+    border-top-right-radius: 30px;
+    
+    
+}
+
+.btn_two i{
+    font-size: 25px;
+    position: absolute;
+    left: 250px;
+    top: 15px;
+    cursor: pointer;
+    color: #dabdbd;
+}
+.menu{
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    
+
+}
+.sidebar_menu .menu li{
+    /* border: 2px solid yellow; */
+    list-style: none;
+    padding: 10px 30px;
+    font-size: 20px;
+
+}
+.sidebar_menu .menu li a{
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+
+}
+.sidebar_menu .menu li i{
+    color: white;
+   
+}
+.social_media{
+    position: absolute;
+    bottom: 20px;
+    left: 90px;
+    
+}
+.social_media i{
+    color:#050000;
+    opacity: 0.5;
+    font-size: 20px;
+    padding-left: 7px;
+}
+.signup_btn ,.login_btn {
+    height: 30px;
+    background-color: rgba(49, 49, 128, 0.455);
+    width: 75px;
+    float: right;
+    position: absolute;
+    right: 150px;
+    border: transparent;
+    border-radius: 10px;
+    top: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    line-height: 28px;
+    text-align: center;
+}
+.login_btn{
+    /* height: 30px;
+    background-color: rgba(49, 49, 128, 0.455);
+    width: 75px;
+    float: right;
+    position: absolute;
+    border: transparent;
+    border-radius: 10px;
+    top: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    line-height: 28px;
+    text-align: center; */
+    right: 50px;
+
+}
+/* hover effect */
+.sidebar_menu .menu li:hover{
+    /* border: 2px solid yellow; */
+    list-style: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    box-shadow: 0 0 6px rgba(255, 0255, 255, 0.7);
+
+
+}
+.social_media i:hover{
+    color:#fff;
+    opacity: 1;
+    font-size: 20px;
+    padding-left: 7px;
+    transform: scale(1.1);
+    transition: 0.2s linear;
+}
+#check:checked ~ .sidebar_menu {
+    position: absolute;
+    left: 0px;
+    transition: all 0.4s linear ;
+}
+.btn_one i:hover{
+   font-size: 27px;
+
+}
+.btn_two i:hover{
+    font-size: 27px;
+    color: #fff;
+
+}
+#check:checked ~ .btn_one i{
+    display: none;
+ 
+}
